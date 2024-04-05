@@ -1,0 +1,113 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1e1e1e; /* Dark background */
+    color: #ccc; /* Light text color */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.project {
+    margin-bottom: 40px; /* Adjust the space between projects as needed */
+}
+
+.section {
+    padding: 50px 0;
+}
+
+/* Custom heading styles */
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    color: #ff9800; /* Highlighted color */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #ff9800; /* Highlighted color */
+}
+
+.profile-pic {
+    display: block;
+    margin: 0 auto;
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #fff; /* Add a border to create a frame */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    margin-bottom: 20px;
+    animation: pulse 2s infinite; /* Apply the pulse animation */
+}
+
+/* Define the pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Add styles for project images */
+.project-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Add styles for small project images */
+.project-img-small {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%; /* Adjust the maximum width as needed */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Add hover effect for project images */
+.project-img:hover {
+    transform: scale(1.05); /* Enlarge the image on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
